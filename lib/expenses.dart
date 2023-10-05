@@ -1,3 +1,4 @@
+import 'package:expense_tracker/expenses_list.dart';
 import 'package:expense_tracker/models/expense.dart';
 import 'package:flutter/material.dart';
 
@@ -25,10 +26,14 @@ class _ExpensesState extends State<Expenses> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Column(children: [
-        Text("data"),
-        Text("data"),
-      ]),
+      body: Column(
+        children: [
+          Text("data"),
+          Expanded(
+            child: ExpensesList(expenses: _registerExpenses),
+          ),
+        ],
+      ),
     );
   }
 }

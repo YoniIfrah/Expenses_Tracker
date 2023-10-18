@@ -32,3 +32,26 @@ class Expense {
     return formatter.format(date);
   }
 }
+
+class ExpenseBucket {
+  const ExpenseBucket({required this.category, required this.expenses});
+
+  final Category category;
+  final List<Expense> expenses;
+
+  /// take part of the init method.
+  ///
+  /// the expenses list will get the filtered expense by the category where is the same as we get from this.category
+  ExpenseBucket.forCategory(List<Expense> allExpenses, this.category)
+      : expenses = allExpenses
+            .where((expense) => expense.category == category)
+            .toList();
+
+  double get totalExpenses {
+    double sum = 0;
+    for (final expense in expenses) {
+      sum += expense.amount;
+    }
+    return sum;
+  }
+}

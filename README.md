@@ -17,5 +17,5 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Example
 
-https://github.com/YoniIfrah/Expenses_Tracker/assets/73611785/ea6c1d63-dcdd-4282-8cca-9364573339bc
+![Simulator iPhone 14](https://github.com/YoniIfrah/Expenses_Tracker/assets/73611785/589b3326-711c-4529-986e-06cdf52c8cd0)
 
